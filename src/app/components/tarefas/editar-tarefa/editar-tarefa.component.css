@@ -1,0 +1,170 @@
+.container-tarefa-data {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.container-tarefa {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 2rem;
+}
+  
+.container-data {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+  
+.acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+    
+.botao {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
+}
+    
+.editar-tarefa {
+  padding: 2rem 0;
+}
+    
+.editar-tarefa form {
+  background: #C4EDFF;
+
+  border: none;
+  border-radius: 20px;
+    
+  display: flex;
+  flex-direction: column;
+  
+  padding: 2rem;
+}
+    
+.editar-tarefa form label {
+  color: #154580;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+    
+.editar-tarefa form .input {
+  border: none;
+  height: 16rem;
+  width: 20rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+    
+    
+.editar-tarefa form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+    
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+    
+.modelos {
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid red;
+}
+    
+.urgencia {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  max-width: 250px;
+  margin: 1rem 0 2rem;
+}
+    
+.urgencia .tarefa {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+    
+.urgencia .data {
+  word-wrap: break-word;
+}
+    
+.radio {
+  margin: 0;
+}
+    
+.urgencia-alta {
+  box-shadow: 8px 8px 0px #F31313;
+}
+    
+.urgencia-media {
+  box-shadow: 8px 8px 0px #F37D58;
+}
+    
+.urgencia-baixa {
+  box-shadow: 8px 8px 0px #F4EC24;
+}
+    
+input[type='radio'] {
+  display: none;
+}
+    
+.radio-urgencia label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+    
+.custom-radio {
+  border: 1px solid #154580;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+    
+.custom-radio,
+  span {
+  transition: 0.5s ease;
+  color: #154580;
+}
+    
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+    
+input[type='radio']:checked+.custom-radio {
+  border-color: #154580;
+}
+    
+input[type='radio']:checked+.custom-radio span {
+  background: #154580;
+}
+  
+.demo-inline-calendar-card {
+  width: 140%;
+  background-color: #154580;
+  color: #C4EDFF;
+}
+  
+.urgencia-titulo {
+  margin: 0 0 1rem 2rem !important;
+}
+  
+.urgencias {
+  color: #444444;
+  font-weight: lighter;
+}

@@ -1,0 +1,45 @@
+.cabecalho {
+    background: url(../../../assets/img/header.png);
+    background-size: cover;
+  }
+  
+  .cabecalho .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cabecalho .logo img {
+    width: 70%;
+    max-width: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .cabecalho p {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #6BD1FF;
+  }
+
+  @media (max-width: 576px) {
+    .cabecalho .logo {
+      padding: 1rem;
+    }
+    .cabecalho p {
+      font-size: 0.8rem
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cabecalho .logo {
+      width: 90%;
+    }
+    .cabecalho .imagem {
+      display: none;
+    }
+  }

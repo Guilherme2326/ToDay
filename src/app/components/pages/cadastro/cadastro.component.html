@@ -1,0 +1,36 @@
+<div class="layout">
+    <section class="container cadastro ff-inter">
+        <div class="principal">
+            <header class="header">
+                <h1>Cadastro</h1>
+            </header>
+            <form>
+                <div class="entradas">
+                    <label for="usuario">Digite seu novo usuário:</label>
+                    <input 
+                        type="text" 
+                        id="usuario" 
+                        name="usuario"
+                        [(ngModel)]="login.usuario"
+                    >
+                </div>
+                <div class="entradas">
+                    <label for="senha">Digite sua nova senha:</label>
+                    <input 
+                        type="password" 
+                        id="senha" 
+                        name="senha"
+                        [(ngModel)]="login.senha"
+                    >
+                </div>
+                <div class="acoes">
+                    <button (click)="criarLogin()" class="botao" type="submit">Finalizar Cadastro</button>
+                    <button (click)="cancelar()" class="botao" type="submit">Cancelar</button>
+                </div>
+                <div *ngIf="cadastroError" class="error-message">
+                    Ocorreu um erro ao cadastrar. Por favor, tente novamente mais tarde.
+                  </div>
+            </form>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,30 @@
+<div class="layout">
+    <section class="container login ff-inter">
+        <div class="container-esquerda">
+            <header class="header">
+                <h2>Login</h2>
+            </header>
+            <form>
+                <div>
+                    <label for="username">Usuário :</label>
+                    <input type="text" id="username" name="username" [(ngModel)]="login.usuario">
+                </div>
+                <div>
+                    <label class="senha" for="password">Senha :</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="login.senha">
+                </div>
+                <div class="acoes">
+                    <button (click)="login_()" class="botao" type="submit">Entrar</button>
+                    <button (click)="cadastrar()" class="botao" type="submit">Cadastrar</button>
+                </div>
+            </form>
+            <div *ngIf="loginError" class="error-message">
+                Usuário ou senha inválidos. Por favor, tente novamente.
+            </div>
+        </div>
+        <div class="container-direita">
+            <img class="logo" src="../../../../assets/img/logo.png" alt="logo ToDay">
+            <p class="slogan">Transforme suas tarefas em notas!</p>
+        </div>
+    </section>
+</div>

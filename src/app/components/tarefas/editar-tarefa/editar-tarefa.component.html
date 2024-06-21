@@ -1,0 +1,97 @@
+<section class="container editar-tarefa ff-inter">
+    <header class="header">
+      <h2>Adicione uma tarefa<br>nova:</h2>
+    </header>
+    <form>
+        <div class="container-tarefa-data">
+          <div class="container-tarefa">
+            <label for="tarefa">Tarefa:</label>
+            <input
+              type="textarea"
+              class="input"
+              id="tarefa"
+              name="tarefa"
+              placeholder="Digite sua tarefa."
+              [(ngModel)]="tarefa.tarefa"
+            >
+          </div>
+          <div class="container-data">
+            <label for="data">Data de Entrega:</label>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Escolha uma data" name="prazo" [(ngModel)]="tarefa.prazo">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+      <label for="urgencia" class="urgencia-titulo">Selecione a urgência:</label>
+      <div class="container-radio">
+        <div class="radio-urgencia">
+          <label for="urgencia-alta">
+            <input
+              type="radio"
+              id="urgencia-alta"
+              value="urgencia-alta"
+              name="urgencia"
+              [(ngModel)]="tarefa.urgencia"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span class="urgencias">Urgência Alta</span>
+          </label>
+          <div class="urgencia urgencia-alta ff-roboto-mono">
+            <img src="/assets/img/urgencia-alta.png" alt="Aspas Vermelhas">
+            <p class="tarefa"> {{ tarefa.tarefa }}</p>
+            <p class="data"><b>{{ tarefa.prazo | date:'dd/MM/yyyy' }}</b></p>
+          </div>
+        </div>
+  
+        <div class="radio-urgencia">
+          <label for="urgencia-media">
+            <input
+              type="radio"
+              id="urgencia-media"
+              value="urgencia-media"
+              name="urgencia"
+              [(ngModel)]="tarefa.urgencia"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span class="urgencias">Urgência Média</span>
+          </label>
+          <div class="urgencia urgencia-media ff-roboto-mono">
+            <img src="/assets/img/urgencia-media.png" alt="Aspas Laranja">
+            <p class="tarefa">{{ tarefa.tarefa }}</p>
+            <p class="data"><b>{{ tarefa.prazo | date:'dd/MM/yyyy' }}</b></p>
+          </div>
+        </div>
+  
+        <div class="radio-urgencia">
+          <label for="urgencia-baixa">
+            <input
+              type="radio"
+              id="urgencia-baixa"
+              value="urgencia-baixa"
+              name="urgencia"
+              [(ngModel)]="tarefa.urgencia"
+            >
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span class="urgencias">Urgência Baixa</span>
+          </label>
+          <div class="urgencia urgencia-baixa ff-roboto-mono">
+            <img src="/assets/img/urgencia-baixa.png" alt="Aspas Amarelas">
+            <p class="tarefa"> {{ tarefa.tarefa }}</p>
+            <p class="data"><b> {{ tarefa.prazo | date:'dd/MM/yyyy' }} </b></p>
+          </div>
+        </div>
+      </div>
+      <div class="acoes">
+        <button (click)="editarTarefa()" class="botao">Salvar</button>
+        <button (click)="cancelar()" class="botao">Cancelar</button>
+      </div>
+    </form>
+  </section>

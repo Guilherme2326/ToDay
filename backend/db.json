@@ -1,0 +1,32 @@
+{
+  "tarefas": [
+    {
+      "tarefa": "Entrega projeto final Programação Web",
+      "prazo": "2024-06-30T03:00:00.000Z",
+      "urgencia": "urgencia-alta",
+      "usuarioId": 1,
+      "id": 1
+    },
+    {
+      "tarefa": "Entrega trabalhos finais",
+      "prazo": "2024-06-11T03:00:00.000Z",
+      "urgencia": "urgencia-media",
+      "usuarioId": 1,
+      "id": 3
+    },
+    {
+      "tarefa": "Rematricula UCB 2024/2",
+      "prazo": "2024-07-01T03:00:00.000Z",
+      "urgencia": "urgencia-baixa",
+      "usuarioId": 1,
+      "id": 5
+    }
+  ],
+  "login": [
+    {
+      "usuarioId": 1,
+      "usuario": "thiago",
+      "senha": "teste"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+.layout {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(#6BD1FF 40%, #84ECC1 70%);
+}
+
+.cadastro {
+    background: #C4EDFF;
+
+    border: none;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 8rem;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.principal form label {
+    color: #154580;
+    font-weight: bold;
+}
+
+.principal form input {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin: 0.5rem 0 2rem;
+}
+
+.entradas {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+
+.acoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.botao {
+    margin: 5px;
+    margin-top: 20px;
+    width: 180px;
+}
+
+.error-message {
+    color: red;
+}

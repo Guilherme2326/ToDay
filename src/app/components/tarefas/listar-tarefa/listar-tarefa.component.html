@@ -1,0 +1,16 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">Meu Mural</h2>
+    <button routerLink="/adicionarTarefa" class="botao">Adicionar tarefa</button>
+  </header>
+  <div class="mural" *ngIf="tarefas && tarefas.length > 0; else semTarefas">
+    <div *ngFor="let tarefa of tarefas">
+      <app-tarefa [tarefa]="tarefa"></app-tarefa>
+    </div>
+  </div>
+</section>
+<ng-template #semTarefas>
+  <div class="ff-inter sem-tarefas">
+    <p>Ainda não há tarefas cadastradas!</p>
+  </div>
+</ng-template>

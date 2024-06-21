@@ -1,0 +1,75 @@
+.layout {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(#6BD1FF 40%, #84ECC1 70%);
+}
+
+.login {
+    background: #C4EDFF;
+
+    border: none;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 8rem;
+}
+
+.container-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.container-esquerda form label {
+    color: #154580;
+    font-weight: bold;
+}
+
+.container-esquerda form input {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin: 0.5rem 0 2rem;
+}
+
+.senha {
+    margin: 0 1rem 0 0;
+}
+
+.container-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    width: 70%;
+}
+
+.slogan {
+    color: #154580;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.botao {
+    margin: 5px;
+    margin-top: 20px;
+    width: 180px;
+}
+
+.error-message {
+    color: red;
+}

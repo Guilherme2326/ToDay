@@ -1,0 +1,14 @@
+<div class="tarefa {{ tarefa.urgencia }} ff-roboto-mono">
+    <img src="/assets/img/{{ tarefa.urgencia }}.png" alt="Aspas coloridas">
+    <p class="tarefa-texto">{{ tarefa.tarefa }}</p>
+    <p class="prazo"><b>{{ tarefa.prazo | date:'dd/MM/yyyy' }}</b></p>
+    <div class="acoes">
+      <button (click)="editarTarefa()" class="botao-editar" routerLink="/tarefa/editarTarefa/1">
+        <img src="/assets/img/botao-editar-{{ tarefa.urgencia }}.png" alt="Ícone de editar">
+      </button>
+      <button (click)="excluirTarefa()" class="botao-excluir" routerLink="">
+        <img src="/assets/img/botao-excluir-{{ tarefa.urgencia }}.png" alt="Ícone de excluir">
+      </button>
+    </div>
+  </div>
+  
